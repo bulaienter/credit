@@ -1,0 +1,20 @@
+.content {
+	padding: 0.24rem;
+}
+.content .line1 {
+	font-size: 0.32rem;
+	margin-bottom: 0.12rem;
+}
+.content .line2 {
+	font-size: 0.24rem;
+	color: #b9b9b9;
+	margin-bottom: 0.24rem;
+}
+.content .line2 span {
+	margin-left: 0.35rem;
+}
+.content .cont {
+	line-height: 0.42rem;
+	font-size: 0.26rem;
+	text-indent: 2em;
+}
