@@ -1,0 +1,95 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/swiper-4.2.2.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper-4.2.2.min.js" type="text/javascript" charset="utf-8"></script>
+<title>首页</title>
+</head>
+<body>
+<!--banner start-->
+<div class="swiper-container" id="banner">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" style="background: url(images/banner1.jpg) no-repeat center;background-size: cover;"></div>
+		<div class="swiper-slide" style="background: url(images/banner1.jpg) no-repeat center;background-size: cover;"></div>		
+		<div class="swiper-slide" style="background: url(images/banner1.jpg) no-repeat center;background-size: cover;"></div>		
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<!--banner end-->
+<!--公告 start-->
+<div class="notice swiper-container" id="notice">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><a href="show.html">1您好，感谢参与本期课程集训！</a></div>
+		<div class="swiper-slide"><a href="show.html">2您好，感谢参与本期课程集训！</a></div>
+	</div>
+</div>
+<!--公告 end-->
+<!--中间菜单部分-->
+<div class="m_menu">
+	<a href="newnotice_list.html" class="item">
+		<div class="imgbox"><img src="images/u1-1.png"/></div>
+		<p>最新公告</p>
+	</a>
+	<a href="" class="item">
+		<div class="imgbox"><img src="images/u1-2.png"/></div>
+		<p>课程表</p>
+	</a>
+	<a href="" class="item">
+		<div class="imgbox"><img src="images/u1-3.png"/></div>
+		<p>扫码签到</p>
+	</a>
+	<a href="notice_list.html" class="item">
+		<div class="imgbox"><img src="images/u1-4.png"/></div>
+		<p>学员须知</p>
+	</a>
+	<a href="seat_list.html" class="item">
+		<div class="imgbox"><img src="images/u1-5.png"/></div>
+		<p>座次安排</p>
+	</a>
+	<a href="address_list.html" class="item">
+		<div class="imgbox"><img src="images/u1-6.png"/></div>
+		<p>通讯录</p>
+	</a>
+	<a href="" class="item">
+		<div class="imgbox"><img src="images/u1-7.png"/></div>
+		<p>课程评价</p>
+	</a>
+	<a href="download.html" class="item">
+		<div class="imgbox"><img src="images/u1-8.png"/></div>
+		<p>课件下载</p>
+	</a>
+	<a href="" class="item">
+		<div class="imgbox"><img src="images/u1-9.png"/></div>
+		<p>联系我们</p>
+	</a>
+</div>
+<div class="he"></div>
+<div class="botmenu">
+  <a href="index.html" class="bmenu home active"> 当前班级 </a>
+  <a href="class_list.html" class="bmenu zqh"> 历史班级 </a>
+  <a href="user.html" class="bmenu my"> 个人中心 </a>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+var banner = new Swiper('#banner',{
+	autoplay: true,
+	pagination: {
+    el: '.swiper-pagination',
+  },
+	observer:true,
+	observeParents: true
+})
+var notice = new Swiper('#notice',{
+	autoplay: true,
+	direction : 'vertical',
+	loop: true,
+	observer:true,
+	observeParents: true
+})
+</script>
