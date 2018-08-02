@@ -85,7 +85,7 @@ downloadFile = function (sUrl) {
   if(sUrl.indexOf('?') === -1) {
     sUrl += '?download';
   }
-  window.open(sUrl, '_self');
+  window.open(sUrl, '_self'); 
   return true;
 }
 window.downloadFile.isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
