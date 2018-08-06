@@ -1,0 +1,111 @@
+.qdtop {
+  background: #5a80c1 url(../images/qd_bg.jpg) left bottom no-repeat;
+  background-size: 100%;
+  padding: 1rem 0;
+  position: relative;
+}
+.qdtop .btn {
+  background: url(../images/qd_tb.png) no-repeat top center;
+  background-size: 2.5rem;
+  padding-top: 2.6rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.28rem;
+}
+.qdtop .back {
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url(../images/qd_fh.jpg) no-repeat;
+  background-size: cover;
+  top: 0.24rem;
+  left: 0;
+}
+
+/*日历*/
+.calendar .nowdate {
+	margin: 0 0.74rem;
+	border-bottom: #DFDFDF solid 0.01rem;
+	display: flex;
+	justify-content: space-around;
+	padding: 0.2rem 0;
+  font-size: 0.28rem;
+}
+#pre,#next {
+	color: #888;
+}
+.rl-main {
+  background: #fff;
+  margin: 0 0.24rem;
+  border-radius: 0.08rem;
+  padding: 0.1rem 0.5rem 0.3rem 0.5rem;
+}
+.rl-main .week {
+  display: flex;
+  justify-content: space-around;
+  /*margin-bottom: 0.2rem;*/
+  background: #dce3f2;
+  color: #6185c4;
+  line-height: 0.52rem;
+}
+.rl-main .week span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0 0.18rem;
+}
+.rl-main .week span.active {
+}
+.rl-main .day {
+  display: flex;
+  justify-content: space-around;
+  line-height: 0.44rem;
+}
+.rl-main .day span {
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem 0.14rem 0.1rem;
+  position: relative;
+}
+.rl-main .day span.before {
+  color: #fff;
+}
+.rl-main .day span.active {
+  /*color: #12b06b;*/
+}
+.rl-main .day span.am:before {
+	content: '';
+	width: 0.3rem;
+	height: 0.13rem;
+  background: url(../images/am.jpg) no-repeat;
+  background-size: 0.3rem;
+  position: absolute;
+  right: -0.05rem;
+  top: 0.24rem;
+}
+.rl-main .day span.pm:after {
+	content: '';
+	width: 0.3rem;
+	height: 0.13rem;
+  background: url(../images/pm.jpg) no-repeat;
+  background-size: 0.3rem;
+  position: absolute;
+  right: -0.05rem;
+  top: 0.44rem;
+}
+.rl-main .item-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rl-main .item-list .item {
+  border-left: #13b069 solid 0.06rem;
+  margin: 0.1rem 0.1rem 0.05rem 0;
+  padding-left: 0.1rem;
+  width: 2.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rl-main.gz {
+  margin-bottom: 0.5rem
+}

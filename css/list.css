@@ -9,6 +9,7 @@
 	line-height: 0.52rem;
 	background: url(../images/right.png) no-repeat right center;
 	background-size: 0.12rem;
+  padding-right: 0.24rem;
 }
 .item .line1 span {
 	background: url(../images/news.png) no-repeat center;
@@ -18,10 +19,21 @@
 	height: 0.24rem;
 	margin-left: 0.12rem;
 }
+.item.pj .line1 {
+	background: none;
+	padding-right: 0;
+}
 .item .line2 {
 	font-size: 0.24rem;
 	color: #b9b9b9;
 	margin-top: 0.12rem;
+	position: relative;
+}
+.item .line2 span {
+	display: inline-block;
+	color: #213E68;
+	position: absolute;
+	right: 0;
 }
 /*通讯录*/
 .searchbox {
